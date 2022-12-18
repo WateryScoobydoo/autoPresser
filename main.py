@@ -29,9 +29,9 @@ def main():
         if keyboard.is_pressed('9'):
             break
         try:
-            time.sleep(randint(2,30))
+            time.sleep(randint(601,849))
             keyboard.press('0')
-            time.sleep(randint(2,3))
+            time.sleep(randint(0.1,0.80))
             keyboard.release('0')
         except:
             break
