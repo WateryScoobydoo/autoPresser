@@ -31,6 +31,7 @@ def main():
         try:
             time.sleep(randint(2,30))
             keyboard.press('0')
+            keyboard.release('0')
         except:
             break
 
