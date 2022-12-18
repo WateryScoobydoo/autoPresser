@@ -15,7 +15,7 @@ def type(string):
         delay = random.uniform(0, 20)
         time.sleep(0.12)
 
-type("WASD WASD WASD ")
+type("WASD WASD WASD 8")
 
 def main():
     x = 0
@@ -29,9 +29,9 @@ def main():
         if keyboard.is_pressed('9'):
             break
         try:
-            time.sleep(randint(601,849))
+            time.sleep(randint(5,30))
             keyboard.press('0')
-            time.sleep(randint(0.1,0.80))
+            time.sleep(randint(1,2))
             keyboard.release('0')
         except:
             break
