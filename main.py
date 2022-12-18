@@ -2,6 +2,9 @@ import time, random, keyboard
 from random import randint
 from pynput.keyboard import Key, Controller
 
+# py -m pip install keyboard
+# py -m pip install pynput
+
 key = Controller()
 
 time.sleep(5)
@@ -33,6 +36,7 @@ def main():
 
 main()
 
-
+async def on_ready():
+        print("AutoPresser Initiated!")
 
 
