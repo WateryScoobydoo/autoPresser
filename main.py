@@ -17,16 +17,20 @@ def type(string):
 
 type("WASD WASD WASD 8")
 
+
 def main():
     x = 0
+    print("AutoPresser Initiated!")
     while x == 0:
         try:
             if keyboard.is_pressed('8'):
                 x = 1
+                print("AutoPresser Activated!")
         except:
             x = 0
     while x == 1:
         if keyboard.is_pressed('9'):
+            print("AutoPresser Deactivated!")
             break
         try:
             time.sleep(randint(5,30))
@@ -35,10 +39,9 @@ def main():
             keyboard.release('0')
         except:
             break
-
+        
 main()
 
-async def on_ready():
-        print("AutoPresser Initiated!")
+
 
 
